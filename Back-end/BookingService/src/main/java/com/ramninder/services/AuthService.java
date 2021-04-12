@@ -5,6 +5,8 @@ import com.ramninder.models.Users;
 public interface AuthService {
 	
 	public Users loginWithUsernameAndPassword(Users u);
+	
+	public Users createNewUser(Users u);
 
 
 }
