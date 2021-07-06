@@ -32,7 +32,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		 http.httpBasic();
 		 //http.formLogin();
 		 http.authorizeRequests().mvcMatchers(HttpMethod.POST, "/bookings").hasAnyRole("USER","ADMIN")
-		 						 .mvcMatchers(HttpMethod.GET,"/bookings").hasRole("ADMIN");
+		 						 .mvcMatchers(HttpMethod.GET,"/bookings").hasRole("ADMIN").and().csrf().disable();
 //		http.authorizeRequests()
 //				.mvcMatchers(HttpMethod.GET, "/couponapi", "/index", "/showGetCoupon", "/getCoupon", "/couponDetails")
 //				.hasAnyRole("USER", "ADMIN")
