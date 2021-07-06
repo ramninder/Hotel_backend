@@ -1,5 +1,12 @@
 server:
   port: 9093
+  
+#security:
+#  oauth2:
+#    resource:
+#      jwt:
+#        key-uri: http://localhost:9095/oauth/token_key
+#        
 
 spring:
   profiles:

@@ -18,7 +18,7 @@ public class Role implements GrantedAuthority {
 	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private int id;
 	private String name;
 	
 	@ManyToMany(mappedBy = "roles")
@@ -37,7 +37,7 @@ public class Role implements GrantedAuthority {
 	}
 
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

@@ -14,9 +14,6 @@ public class BookingServiceApplication {
 		SpringApplication.run(BookingServiceApplication.class, args);
 	} 
 	
-	@Bean
-	public BCryptPasswordEncoder bCryptPasswordEncoder() {
-	 return new BCryptPasswordEncoder();
-	}
+	
 
 }
